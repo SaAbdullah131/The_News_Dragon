@@ -21,19 +21,17 @@ const NavigationBar = () => {
                             </Nav>
                             <Nav>
                                 {
-                                    user &&
-                                    <Nav.Link href="#deets">
-                                        <FaUserCircle style={{ width: '50px', height: '30px' }} />
-                                    </Nav.Link>
+                                    user && <FaUserCircle style={{ width: '50px', height: '30px' }} />  
+                                    
                                 }
-                                <Nav.Link eventKey={2} href="#memes">
+                                
                                     {user ?
-                                        <Button variant='secondary'>Log Out</Button> :
-                                        <Link to='/login'>Log
+                                       <Link to='/'><Button variant='secondary'>Log Out</Button></Link> :
+                                        <Link to='/login'>
                                             <Button variant='primary'>Log In</Button>
                                         </Link>
                                     }
-                                </Nav.Link>
+                              
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

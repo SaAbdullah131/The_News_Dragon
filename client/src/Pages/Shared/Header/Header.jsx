@@ -1,14 +1,10 @@
-import React, { useContext } from 'react';
+
 import logo from '../../../assets/logo.png';
 import moment from 'moment';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import { Link } from 'react-router-dom';
-import { AuthContext } from '../../../Providers/AuthProvider';
-import { FaUserCircle } from 'react-icons/fa';
-import NavigationBar from '../NavigationBar/NavigationBar';
+
 const Header = () => {
-    const { user } = useContext(AuthContext);
 
     return (
         <div>
@@ -26,7 +22,7 @@ const Header = () => {
                         I can be a React component, multiple React components, or just some text.
                     </Marquee>
                 </div>
-                <NavigationBar></NavigationBar>
+                
             </Container>
 
         </div>
