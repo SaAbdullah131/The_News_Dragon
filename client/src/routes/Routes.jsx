@@ -6,6 +6,7 @@ import News from "../Pages/News/News";
 import LogInLayout from "../Layouts/LogInLayout";
 import Login from '../Pages/LogIn/Login/Login';
 import Register from '../Pages/LogIn/Register/Register';
+import Terms from "../Pages/Shared/Terms/Terms";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                path:"register",
                element:<Register></Register>
+            },
+            {
+                path:'/terms',
+                element:<Terms></Terms>
             }
             
             
