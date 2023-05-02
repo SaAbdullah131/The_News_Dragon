@@ -33,10 +33,10 @@ const Register = () => {
     }
     return (
         <div>
-            <h3 className="text-center mt-4">Please Register</h3>
+            <h3 className="text-center mt-4 mb-3">Please Register</h3>
             <Container className="d-flex g-5">
                 <img className="me-10" style={{ width: '45%', height: '40%' }} src={RegisterImage} />
-                <Form onSubmit={handleRegisterUser} className="my-auto ms-10 w-50" style={{ height: '50%' }}>
+                <Form onSubmit={handleRegisterUser} className="my-auto ms-10 mt-3 w-50 border border-success p-5 rounded" style={{ height: '50%' }}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Your Name</Form.Label>
                         <Form.Control type="text" name="name" placeholder="Enter Name"  />
